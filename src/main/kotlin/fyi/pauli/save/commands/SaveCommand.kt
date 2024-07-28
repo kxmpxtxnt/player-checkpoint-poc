@@ -19,10 +19,6 @@ import kotlin.io.path.*
 val saveCommand = command("save") {
   runs {
     val save = Save(
-      Save.WorldState(
-        player.world.time,
-        if (player.world.isClearWeather) WeatherType.CLEAR else WeatherType.DOWNFALL
-      ),
       player.location,
       player.activePotionEffects.toList(),
       player.inventory.toContainer(),

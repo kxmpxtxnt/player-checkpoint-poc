@@ -15,17 +15,10 @@ object PotionEffectSerializer : KSerializerForBukkit<PotionEffect>(PotionEffect:
 
 @Serializable
 data class Save(
-  val world: WorldState,
   @Serializable(with = LocationSerializer::class) val location: Location,
   val activeEffects: List<@Serializable(with = PotionEffectSerializer::class) PotionEffect>,
   val inventory: InventoryContainer,
 ) {
-
-  @Serializable
-  data class WorldState(
-    val time: Long,
-    val weatherType: WeatherType,
-  )
 
   @Serializable
   data class InventoryContainer(
