@@ -11,3 +11,7 @@ it is unwise to save the world in a minecraft rpg. Since there are always differ
 and scenarios in which such games are played, these different locations are always made available
 as world templates and only the player data is saved.
 The aim of this project is to develop an example of this mechanism.
+
+### Disclaimer :D
+
+This is just for testing. This code is only there to actually work and not to be good code 
